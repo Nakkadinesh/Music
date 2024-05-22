@@ -5,19 +5,19 @@
     <h2>Themes. Unlimited themes.</h2>
     <p>Themes in Sleeve make creating and switching between customizations easy. Share your own creations with friends and install as many themes as you like with just a double-click.</p>
 
-    <div style="background-image: linear-gradient(blue,red,green); height: 250px; width: 750px;">
+    <div class="lists" style="background-image: linear-gradient(blue,red,green); height: 250px; width: 750px; border-radius: 50px;">
         <img  src="assets/images/ShelfCallout@2x.png" alt="Shelf Image" class="shelf-image">
         <img src="assets/images/ShelfCallout@2x.png" alt="Shelf Image" class="shelf-image">
         <img src="assets/images/ShelfCallout@2x.png" alt="Shelf Image" class="shelf-image">
     </div>
 
-    <div class="spans-container" [ngStyle]="{'filter': 'brightness(50%)'}">
-        <div class="theme-span" *ngFor="let theme of services" [style.backgroundImage]="'url(' + theme.bgi + ')'" >
+    <div class="spans-container">
+        <div class="theme-span" *ngFor="let theme of services" [style.backgroundImage]="'url(' + theme.bgi + ')'"  >
             <div class="text-content">
-                <h1>{{theme.head}}</h1>
+                <h5>{{theme.head}}</h5>
                 <p>{{theme.para}}</p>
-                <img [src]="theme.img" alt="Card image" class="theme-img">
             </div>
+            <img [src]="theme.img" alt="Card image" class="theme-img">
         </div>
     </div>
 </div>

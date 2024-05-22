@@ -1,75 +1,60 @@
-html, body {
-    height: 100%;
-    width: 50%;
-    margin: 0;
-    font-family: Arial, sans-serif; /* Ensure a clean, readable font */
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8f9fa; /* Optional: Background color for better visual */
-  }
-  
-  .container {
-    background: #fff; /* White background for the form container */
-    padding: 30px; /* Add some padding around the form */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  }
-  
-  .row {
-    width: 100%;
-  }
+.container {
+  background: #fff; /* White background for the form container */
+  padding: 30px; /* Add some padding around the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Center the form vertically */
+}
 
-  
-  .form-group.row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px; /* Space between form groups */
-  }
-  
-  label {
-    flex: 0 0 25%; /* Fixed width for labels */
-    text-align: right;
-    padding-right: 10px;
-  }
-  
-  input, button {
-    flex: 1; /* Grow input fields and button to fill available space */
-    padding: 10px; /* Add some padding inside the inputs and button */
-    border: 1px solid #ced4da; /* Light border */
-    border-radius: 4px; /* Rounded corners for inputs */
-  }
-  
-  input:focus {
-    border-color: #80bdff; /* Border color on focus */
-    outline: none; /* Remove default outline */
-  }
-  
-  button {
-    background-color: #007bff; /* Primary button color */
-    color: white;
-    border: none; /* Remove border */
-    cursor: pointer; /* Pointer cursor on hover */
-  }
-  
-  button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-  
-  .btn-link {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .btn-link:hover {
-    text-decoration: underline;
-  }
-  .container{
-    margin-top: 200px;
-  }
+.form-group.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Space between form groups */
+  width: 100%;
+}
+
+label {
+  flex: 0 0 25%; /* Fixed width for labels */
+  text-align: right;
+  padding-right: 10px;
+}
+
+input, button {
+  flex: 1; /* Grow input fields and button to fill available space */
+  padding: 10px; /* Add some padding inside the inputs and button */
+  border: 1px solid #ced4da; /* Light border */
+  border-radius: 4px; /* Rounded corners for inputs */
+  margin-bottom: 15px; /* Space between input fields */
+}
+
+input:focus {
+  border-color: #80bdff; /* Border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.btn-link {
+  display: block;
+  margin-left: 300px;
+  margin-top: 20px;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}

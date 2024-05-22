@@ -1,6 +1,7 @@
 .content-wrapper {
     display: flex;
     flex-direction: column;
+    
     align-items: center; /* Center content horizontally */
     max-width: 1200px; /* Adjust maximum width as needed */
     margin: 0 auto; /* Center the wrapper with auto margins */
