@@ -1,0 +1,34 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form #pay="ngForm" (ngSubmit)="payment(pay.value)" novalidate>
+                <!-- name -->
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label"><span
+                            class="glyphicon glyphicon-user"></span>name</label>
+                    <div class="col-sm-5">
+                        <input type="text" id="name" name="name" class="form-control" ngModel required
+                            placeholder="Enter your name">
+                    </div>
+                </div>
+                <!-- amount -->
+                <div class="form-group row">
+                    <label for="amount" class="col-sm-2 col-form-label">
+                        <span class="glyphicon glyphicon-amount"></span>Amount</label>
+                    <div class="col-sm-5">
+                        <input type="text" id="amount" name="amount" class="form-control" ngModel
+                            placeholder="Enter your phone number" >
+                        </div>
+                    </div>
+       
+                <div class="form-group row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-5">
+                        <button class="btn btn-primary btn-block"><span
+                                class="glyphicon glyphicon-ok"></span> Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

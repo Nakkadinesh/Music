@@ -1,0 +1,64 @@
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    max-width: 1200px; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Center the wrapper with auto margins */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.content-wrapper h3,
+.content-wrapper h4,
+.content-wrapper p,
+.content-wrapper h1,
+.integration-header {
+    text-align: center; /* Center-align text */
+}
+
+.customize-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Make sure it fits within the parent container */
+    margin-bottom: 20px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    flex-basis: 50%;
+}
+
+.left-content img {
+    max-width: 15%;
+    height: auto;
+}
+
+.left-content h1 {
+    margin: 10px 0;
+}
+
+.left-content p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.right-content {
+    flex-grow: 1;
+    max-width: 70%;
+    height: 600px;
+    object-fit: cover;
+    margin-left: 15px;
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to bottom, #cbc4c4, #a38356); /* Example gradient colors */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}

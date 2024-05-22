@@ -1,0 +1,5 @@
+package com.dao;
+@Repository
+public interface BookingRepository<Booking> extends JpaRepository<Booking , Integer>{
+
+}

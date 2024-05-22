@@ -1,0 +1,18 @@
+package com.dao;
+
+public class BookingDao<Booking> {
+	BookingRepository bookingRepository;
+
+	public List<Booking>getBookings(){
+		return bookingRepository.findAll();
+	}
+	public Booking getBookingById(int bookingId) {
+		return bookingRepository.findById(bookingId).orElse(null);
+	}
+	public Booking addBooking(Booking booking) {
+		return bookingRepository.save(booking);
+	}
+	public void deleteBookingById(int bookingId) {
+		bookingRepository.deleteById(bookingId);
+	}
+}

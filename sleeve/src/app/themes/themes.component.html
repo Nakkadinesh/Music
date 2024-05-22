@@ -1,0 +1,23 @@
+<div class="content-wrapper">
+    <h1 style="color: rgb(9, 123, 127);">NEW IN <span style=" color: white;
+        border-radius: 7px;
+        background-color: rgb(0, 202, 206);">2.0</span></h1>
+    <h2>Themes. Unlimited themes.</h2>
+    <p>Themes in Sleeve make creating and switching between customizations easy. Share your own creations with friends and install as many themes as you like with just a double-click.</p>
+
+    <div style="background-image: linear-gradient(blue,red,green); height: 250px; width: 750px;">
+        <img  src="assets/images/ShelfCallout@2x.png" alt="Shelf Image" class="shelf-image">
+        <img src="assets/images/ShelfCallout@2x.png" alt="Shelf Image" class="shelf-image">
+        <img src="assets/images/ShelfCallout@2x.png" alt="Shelf Image" class="shelf-image">
+    </div>
+
+    <div class="spans-container">
+        <div class="theme-span" *ngFor="let theme of services" style="background-image: url('{{theme.bgi}}');">
+            <div class="text-content">
+                <h1>{{theme.head}}</h1>
+                <p>{{theme.para}}</p>
+                <img [src]="theme.img" alt="Card image" class="theme-img">
+            </div>
+        </div>
+    </div>
+</div>

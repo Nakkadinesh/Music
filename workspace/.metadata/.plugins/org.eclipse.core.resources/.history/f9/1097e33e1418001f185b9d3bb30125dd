@@ -1,0 +1,56 @@
+package com.model;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity
+public class Booking {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String amount;
+    private String name;
+    private String transactionaId;
+public Booking(){
+	super();
+}
+public Booking(String name, String transactionaId, String amount) {
+	super();
+	this.name = name;
+	this.transactionaId = generateTransactionId();
+	this.amount = amount;
+}
+private String generateTransactionId() {
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmssSSS");
+    return sdf.format(new Date());
+}
+
+@Override
+public String toString() {
+	return "Booking [name=" + name + ", transactionaId=" + transactionaId + ", amount=" + amount + "]";
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String gettransactionaId() {
+	return transactionaId;
+}
+public void settransactionaId(String transactionaId) {
+	this.transactionaId = transactionaId;
+}
+public String getAmount() {
+	return amount;
+}
+public void setAmount(String amount) {
+	this.amount = amount;
+}
+
+}

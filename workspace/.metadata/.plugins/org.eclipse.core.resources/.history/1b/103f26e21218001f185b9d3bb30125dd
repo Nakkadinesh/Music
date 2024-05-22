@@ -1,0 +1,48 @@
+package com.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+@Entity
+public class Booking {
+	@javax.persistence.Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+private String Id;
+private String name;
+private String emailId;
+private String amount;
+
+public Booking(){
+	super();
+}
+public Booking(String name, String emailId, String amount) {
+	super();
+	this.name = name;
+	this.emailId = emailId;
+	this.amount = amount;
+}
+@Override
+public String toString() {
+	return "Booking [name=" + name + ", emailId=" + emailId + ", amount=" + amount + "]";
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getEmailId() {
+	return emailId;
+}
+public void setEmailId(String emailId) {
+	this.emailId = emailId;
+}
+public String getAmount() {
+	return amount;
+}
+public void setAmount(String amount) {
+	this.amount = amount;
+}
+
+}

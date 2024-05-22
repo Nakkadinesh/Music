@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Program Files\javakit" version="1.8.0_361">
+<bootpath>
+<entry path="C:\Program Files\javakit\lib\resources.jar"/>
+<entry path="C:\Program Files\javakit\lib\rt.jar"/>
+<entry path="C:\Program Files\javakit\lib\jsse.jar"/>
+<entry path="C:\Program Files\javakit\lib\jce.jar"/>
+<entry path="C:\Program Files\javakit\lib\charsets.jar"/>
+<entry path="C:\Program Files\javakit\lib\jfr.jar"/>
+<entry path="C:\Program Files\javakit\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\javakit\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\javakit\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>
