@@ -1,0 +1,18 @@
+:host {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .table {
+    width: 100%;
+  }
+  

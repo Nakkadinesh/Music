@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  app-root {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  router-outlet {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  

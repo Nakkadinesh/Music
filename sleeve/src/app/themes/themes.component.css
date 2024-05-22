@@ -11,6 +11,8 @@
     align-items: center; 
     width: 100%;
     padding: 10px;
+    color: white;
+    
 }
 
 .theme-span {
@@ -23,7 +25,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: black;
+    color:white;
     text-align: center; 
     padding: 20px; 
     border-radius: 10px;

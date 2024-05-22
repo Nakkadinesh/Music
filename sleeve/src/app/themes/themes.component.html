@@ -11,8 +11,8 @@
         <img src="assets/images/ShelfCallout@2x.png" alt="Shelf Image" class="shelf-image">
     </div>
 
-    <div class="spans-container">
-        <div class="theme-span" *ngFor="let theme of services" style="background-image: url('{{theme.bgi}}');">
+    <div class="spans-container" [ngStyle]="{'filter': 'brightness(50%)'}">
+        <div class="theme-span" *ngFor="let theme of services" [style.backgroundImage]="'url(' + theme.bgi + ')'" >
             <div class="text-content">
                 <h1>{{theme.head}}</h1>
                 <p>{{theme.para}}</p>

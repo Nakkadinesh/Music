@@ -9,6 +9,7 @@ import { CustomizationComponent } from './customization/customization.component'
 import { PaymentComponent } from './payment/payment.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TransactionsComponent } from './transactions/transactions.component';
+import { LayoutComponent } from './layout/layout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { TransactionsComponent } from './transactions/transactions.component';
     ThemesComponent,
     CustomizationComponent,
     PaymentComponent,
-    TransactionsComponent
+    TransactionsComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

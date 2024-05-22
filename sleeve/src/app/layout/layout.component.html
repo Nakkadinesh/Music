@@ -1,0 +1,7 @@
+<ng-container *ngIf="isHomePage">
+    <app-start></app-start>
+    <app-themes></app-themes>
+    <app-customization></app-customization>
+  </ng-container>
+  <router-outlet *ngIf="!isHomePage"></router-outlet>
+  
